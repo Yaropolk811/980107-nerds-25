@@ -1,61 +1,82 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Дизайн-студия: "Нёрдс"</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="nav-header">
-        <a class="main-header-logo">
-        <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-        </a>
-        <ul class="site-navigation">
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </nav>
-      <a class="shopping-cart" href="#">Корзина</a>
-    </header>
-    <main class="container">
-      <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
 
-      <section class="services">
-        <h2 class="visually-hidden">Услуги</h2>
-        <ul class="services-list">
-          <li>
-            <img src="img/web-sites.jpg" width="300" height="146" alt="заказать веб-сайт">
-            <h3> ВЕБ-САЙТЫ </h3>
-            <p>Мир никода не будет прежним после того как увидит ваш сайт!</p>
-            <a class="link link-web-red" href="web-sites.html">ЗАКАЗАТЬ</a>
-          </li>
-          <li>
-            <img src="img/apps.jpg" width="300" height="146" alt="заказать приложение">
-            <h3> ПРИЛОЖЕНИЯ </h3>
-            <p>Покорите топ 10 приложений в AppStore и Google Play</p>
-            <a class="link link-apps-green" href="apps.html">ЗАКАЗАТЬ</a>
-          </li>
-          <li>
-            <img src="img/presentations.jpg" width="300" height="146" alt="заказать презентацию">
-            <h3> Презентации </h3>
-            <p>Вы даже не подозреваете насколько вы изумительны!</p>
-            <a class="link link-present-yellow" href="presentations.html">ЗАКАЗАТЬ</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-    <footer>
-        <ul class="footer-social">
-          <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="25" height="15" alt="Вконтакте"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="25" height="15" alt="Фейсбук"></a></li>
-          <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="25" height="15" alt="Инстаграм"></a></li>
-        </ul>
-        <div class=footer-slogan-discount>
-        <b class="footer-slogan">Давайте дружить, это выгодно!</b>
-        <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
-     </div>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Дизайн-студия: "Нёрдс"</title>
+</head>
+
+<body>
+  <header class="main-header">
+    <nav class="nav-header">
+      <a class="main-header-logo">
+        <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+      </a>
+      <ul class="site-navigation">
+        <li><a href="#">СТУДИЯ</a></li>
+        <li><a href="#">КЛИЕНТЫ</a></li>
+        <li><a href="catalog.html">МАГАЗИН</a></li>
+        <li><a href="#">КОНТАКТЫ</a></li>
+      </ul>
+    </nav>
+    <a class="shopping-cart" href="#">КОРЗИНА</a>
+  </header>
+  <main class="container">
+    <h1 class="visually-hidden">Дизайн-студия "Нёрдс"</h1>
+    <section class="services">
+      <h2 class="visually-hidden">Услуги</h2>
+      <ul class="services-list">
+        <li>
+          <img src="img/web-sites.jpg" width="300" height="146" alt="заказать веб-сайт">
+          <h3> ВЕБ-САЙТЫ </h3>
+          <p>Мир никода не будет прежним после того как увидит ваш сайт!</p>
+          <a class="link link-web-red" href="web-sites.html">ЗАКАЗАТЬ</a>
+        </li>
+        <li>
+          <img src="img/apps.jpg" width="300" height="146" alt="заказать приложение">
+          <h3> ПРИЛОЖЕНИЯ </h3>
+          <p>Покорите топ 10 приложений в AppStore и Google Play</p>
+          <a class="link link-apps-green" href="apps.html">ЗАКАЗАТЬ</a>
+        </li>
+        <li>
+          <img src="img/presentations.jpg" width="300" height="146" alt="заказать презентацию">
+          <h3> Презентации </h3>
+          <p>Вы даже не подозреваете насколько вы изумительны!</p>
+          <a class="link link-present-yellow" href="presentations.html">ЗАКАЗАТЬ</a>
+        </li>
+      </ul>
+    </section>
+    <section class="modal modal-appointment">
+      <h2>Напишите нам</h2>
+      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="appointment-item">
+          <label for="appointment-name">Ваше имя:</label>
+          <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-email">Ваш e-mail:</label>
+          <input id="appointment-email" type="text" name="email" value="" placeholder="email@example.com">
+        </p>
+        <p class="appointment-item">
+          <label for="appointment-message">Текст письма:</label>
+          <input id="appointment-message" type="text" name="message" value="" placeholder="В свободной форме">
+        </p>
+        <button class="button-red" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть форму">x</button>
+    </section>
+  </main>
+  <footer>
+    <ul class="footer-social">
+      <li><a class="social-button" href="#"><img src="img/vk-icon.svg" width="25" height="15" alt="Вконтакте"></a></li>
+      <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="25" height="15" alt="Фейсбук"></a></li>
+      <li><a class="social-button" href="#"><img src="img/insta-icon.svg" width="25" height="15" alt="Инстаграм"></a></li>
+    </ul>
+    <div class=footer-slogan-discount>
+      <b class="footer-slogan">Давайте дружить, это выгодно!</b>
+      <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+    </div>
+  </footer>
+</body>
+
 </html>
