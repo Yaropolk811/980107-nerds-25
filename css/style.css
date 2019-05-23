@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Regular", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.88;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.services-list,
+.footer-social {
+  list-style: none;
+}
+
+.site-navigation a,
+.services-list a,
+.shopping-cart {
+  color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.services-list {
+  text-align: center;
+}
+
+
+.link-web-red  {
+  /* Указываем шрифт */
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  /* Указываем цвет */
+
+  /* Указываем большие буквы */
+  text-transform: uppercase;
+  /* Убираем подчеркивание дефолтное для ссылок */
+  text-decoration: none;
+  /* Указываем фон */
+  background-color: #FB565A;
+  /* Центруем с помощью паддингов
+  Высота блока из макета 50px, высота текста 18px,
+  50 - 18 = 32px - это свободное пространство,
+  которое нужно распределить, делим на 2 = 16px*/
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /* С шириной подругому, задаем ее явно,
+  но для этого сделаем элемент блочным */
+  display: inline-block;
+  width: 160px;
+  /* А теперь отцентруем текст  */
+  text-align: center;
+  /* Скругляем углы */
+  border-radius: 5px;
+}
