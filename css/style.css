@@ -144,6 +144,60 @@ a {
   background-color: #e5a722;
 }
 
+/* Осталась белая линия между заголовком и нав по сайту*/
+.page-title-catalog {
+  background-color: #eeeeee;
+  padding-top: 86px;
+  padding-bottom: 116px;
+  text-align: center;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-size: 18px;
+    line-height: 14px;
+}
+
+.filter ul {
+  list-style: none;
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 31px;
+  color: #283136;
+  text-transform: none;
+}
+
+.filter-input:disabled + label {
+  color: #283136;
+
+  opacity: 0.3;
+}
+
+.form-button {
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  height: 13px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #eeeeee;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  width: 260px;
+  text-align: center;
+  border: 0;
+  border-radius: 5px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
 .modal {
   font-family: "Roboto Regular", "Arial", sans-serif;
   background-color: #ffffff;
@@ -181,6 +235,7 @@ input[name="message"] {
   padding-left: 16px;
 }
 
+/* Нижний отступ кнопки не отображается как нужно - по факту там 18px */
 .button-red {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
