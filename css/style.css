@@ -33,19 +33,21 @@ a {
   color: #000000;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
   color: #fb565a;
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.shopping-cart:hover {
+.shopping-cart:hover,
+.shopping-cart:focus {
   color: #fb565a;
 }
 
-.shopping-cart:focus {
+.shopping-cart:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -117,31 +119,37 @@ a {
   border-radius: 5px;
 }
 
-.link-web-red:hover {
+.link-web-red:hover,
+.link-web-red:focus {
   background-color: #e74246;
 }
 
-.link-web-red:focus {
+.link-web-red:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.link-apps-green:hover {
+.link-apps-green:hover,
+.link-apps-green:focus {
   background-color: #00bc6c;
 }
 
-.link-apps-green:focus {
+.link-apps-green:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #00aa62;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.link-present-yellow:hover {
+.link-present-yellow:hover
+.link-present-yellow:focus {
   background-color: #eab534;
 }
 
-.link-present-yellow:focus {
+.link-present-yellow:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #e5a722;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* Осталась белая линия между заголовком и нав по сайту*/
@@ -159,7 +167,7 @@ a {
 .filter legend {
   font-family: "Roboto Bold", "Arial", sans-serif;
   font-size: 18px;
-    line-height: 14px;
+  line-height: 14px;
 }
 
 .filter ul {
@@ -171,9 +179,8 @@ a {
   text-transform: none;
 }
 
-.filter-input:disabled + label {
+.filter-input:disabled+label {
   color: #283136;
-
   opacity: 0.3;
 }
 
@@ -192,6 +199,16 @@ a {
   text-align: center;
   border: 0;
   border-radius: 5px;
+}
+
+.form-button:hover,
+.form-button:focus {
+   background-color: #dfdfdf;
+}
+
+.form-button:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+background-color: #d5d5d5;
 }
 
 .catalog-list {
@@ -251,6 +268,17 @@ input[name="message"] {
   text-align: center;
   border: 0;
   border-radius: 5px;
+}
+
+.button-red:hover,
+.button-red:focus {
+  background-color: #e74246;
+}
+
+.button-red:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .social-button {
