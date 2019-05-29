@@ -23,7 +23,8 @@ a {
 
 .site-navigation,
 .services-list,
-.footer-social {
+.footer-social,
+.catalog-list {
   list-style: none;
   padding: 0;
 }
@@ -83,6 +84,7 @@ a {
   text-align: center;
   /* Скругляем углы */
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .link-apps-green {
@@ -100,6 +102,7 @@ a {
   width: 160px;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .link-present-yellow {
@@ -117,6 +120,7 @@ a {
   width: 160px;
   text-align: center;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .link-web-red:hover,
@@ -141,7 +145,7 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.link-present-yellow:hover
+.link-present-yellow:hover,
 .link-present-yellow:focus {
   background-color: #eab534;
 }
@@ -188,7 +192,6 @@ a {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  height: 13px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -196,23 +199,68 @@ a {
   padding-top: 19px;
   padding-bottom: 18px;
   width: 260px;
+  min-height: 50px;
   text-align: center;
   border: 0;
-  border-radius: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .form-button:hover,
 .form-button:focus {
-   background-color: #dfdfdf;
+  background-color: #dfdfdf;
 }
 
 .form-button:active {
+  color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
-background-color: #d5d5d5;
+  background-color: #d5d5d5;
 }
 
 .catalog-list {
   list-style: none;
+}
+
+.catalog-item-info {
+  background-color: #eeeeee;
+}
+
+.catalog-item {
+  text-align: center;
+}
+
+.catalog-item-title {
+  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 1.67;
+  text-align: center;
+  color: #000000;
+}
+
+.catalog-item-description {
+  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: center;
+  color: #666666;
+}
+
+.link-buy-red {
+  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #FB565A;
+  padding-top: 19px;
+  padding-bottom: 18px;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .modal {
@@ -252,22 +300,43 @@ input[name="message"] {
   padding-left: 16px;
 }
 
-/* Нижний отступ кнопки не отображается как нужно - по факту там 18px */
+/*Состояния не работают*/
+input[type="text"],
+input[type="message"]:hover {
+  color: rgba(68, 68, 68, 0.5);
+  border: solid 2px #b4b9bb;
+}
+
+/*Состояния не работают*/
+input[type="text"],
+input[type="message"]:focus {
+  color: #444444;
+  border: solid 2px #000000;
+}
+
+/*Состояния не работают*/
+input[type="text"],
+input[type="message"]:invalid {
+  color: #e74246;
+  border: solid 2px #e74246;
+}
+
 .button-red {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
-  height: 13px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #FB565A;
   padding-top: 19px;
-  padding-bottom: 31px;
+  padding-bottom: 18px;
   width: 260px;
+  min-height: 50px;
   text-align: center;
   border: 0;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .button-red:hover,
@@ -281,17 +350,19 @@ input[name="message"] {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.social-button {
+.social-link {
   text-align: center;
   background-color: #e1e1e1;
   padding: 32px 26px 32px 27px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.social-button:hover {
+.social-link:hover {
   background-color: #e74246;
 }
 
-.social-button:focus {
+.social-link:focus {
   background-color: #d7373b;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
