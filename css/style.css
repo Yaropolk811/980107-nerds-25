@@ -3,9 +3,8 @@ body {
   padding: 0;
   font-family: "Roboto Regular", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 14px;
   color: #000000;
-  text-transform: uppercase;
   background-color: #ffffff;
 }
 
@@ -16,7 +15,7 @@ a {
 .main-header {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 15px;
   color: #000000;
   background-color: #eeeeee;
 }
@@ -60,8 +59,7 @@ a {
   /* Указываем шрифт */
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
-  height: 13px;
+  line-height: 13px;
   /* Указываем цвет */
   color: #ffffff;
   /* Указываем большие буквы */
@@ -90,8 +88,7 @@ a {
 .link-apps-green {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
-  height: 13px;
+  line-height: 13px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -108,8 +105,7 @@ a {
 .link-present-yellow {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
-  height: 13px;
+  line-height: 13px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -191,7 +187,7 @@ a {
 .form-button {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 13px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -233,7 +229,8 @@ a {
 .catalog-item-title {
   font-family: "Roboto Bold", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 14px;
+  text-decoration: none;
   text-align: center;
   color: #000000;
 }
@@ -241,15 +238,16 @@ a {
 .catalog-item-description {
   font-family: "Roboto Regular", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.13;
+  line-height: 14p;
   text-align: center;
   color: #666666;
+  text-transform: none;
 }
 
 .link-buy-red {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 13px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -279,52 +277,41 @@ a {
   font-size: 16px;
 }
 
-/* Не получается выровнять текст, как нужно, паддинги только расширяют поле */
 input[type="text"] {
   width: 360px;
   height: 50px;
   border: solid 2px #d7dcde;
   background-color: #ffffff;
   opacity: 0.5;
-  padding-top: 18px;
-  padding-bottom: 19px;
-  padding-left: 16px;
 }
 
-/* Не получается выровнять текст, как нужно, паддинги только расширяют поле */
 input[name="message"] {
   width: 760px;
   height: 118px;
-  padding-top: 14px;
-  padding-bottom: 87px;
-  padding-left: 16px;
 }
 
-/*Состояния не работают*/
-input[type="text"],
+input[type="text"]:hover,
 input[type="message"]:hover {
   color: rgba(68, 68, 68, 0.5);
   border: solid 2px #b4b9bb;
 }
 
-/*Состояния не работают*/
-input[type="text"],
+input[type="text"]:focus,
 input[type="message"]:focus {
   color: #444444;
   border: solid 2px #000000;
 }
 
-/*Состояния не работают*/
-input[type="text"],
+input[type="text"]:invalid,
 input[type="message"]:invalid {
   color: #e74246;
   border: solid 2px #e74246;
 }
 
-.button-red {
+.write-us-button {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 13px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -339,12 +326,12 @@ input[type="message"]:invalid {
   cursor: pointer;
 }
 
-.button-red:hover,
-.button-red:focus {
+.write-us-button:hover,
+.write-us-button:focus {
   background-color: #e74246;
 }
 
-.button-red:active {
+.write-us-button:active {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
