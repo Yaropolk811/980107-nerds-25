@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: "Roboto Regular", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 14px;
+  line-height: 30px;
   color: #000000;
   background-color: #ffffff;
 }
@@ -15,7 +15,7 @@ a {
 .main-header {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 15px;
+  line-height: 30px;
   color: #000000;
   background-color: #eeeeee;
 }
@@ -59,7 +59,7 @@ a {
   /* Указываем шрифт */
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 13px;
+  line-height: 18px;
   /* Указываем цвет */
   color: #ffffff;
   /* Указываем большие буквы */
@@ -72,8 +72,8 @@ a {
   Высота блока из макета 50px, высота текста 18px,
   50 - 18 = 32px - это свободное пространство,
   которое нужно распределить, делим на 2 = 16px*/
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   /* С шириной подругому, задаем ее явно,
   но для этого сделаем элемент блочным */
   display: inline-block;
@@ -88,13 +88,13 @@ a {
 .link-apps-green {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 13px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #00ca74;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: inline-block;
   width: 160px;
   text-align: center;
@@ -105,13 +105,13 @@ a {
 .link-present-yellow {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 13px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #efc84a;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: inline-block;
   width: 160px;
   text-align: center;
@@ -167,7 +167,7 @@ a {
 .filter legend {
   font-family: "Roboto Bold", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 14px;
+  line-height: 30px;
 }
 
 .filter ul {
@@ -187,13 +187,13 @@ a {
 .form-button {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 13px;
+  line-height: 18px;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #eeeeee;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   width: 260px;
   min-height: 50px;
   text-align: center;
@@ -229,7 +229,7 @@ a {
 .catalog-item-title {
   font-family: "Roboto Bold", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 14px;
+  line-height: 30px;
   text-decoration: none;
   text-align: center;
   color: #000000;
@@ -238,7 +238,7 @@ a {
 .catalog-item-description {
   font-family: "Roboto Regular", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 14p;
+  line-height: 30px;
   text-align: center;
   color: #666666;
   text-transform: none;
@@ -247,13 +247,13 @@ a {
 .link-buy-red {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 13px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #FB565A;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: inline-block;
   width: 200px;
   text-align: center;
@@ -311,13 +311,13 @@ input[type="message"]:invalid {
 .write-us-button {
   font-family: "Roboto Medium", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 13px;
+  line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #FB565A;
-  padding-top: 19px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   width: 260px;
   min-height: 50px;
   text-align: center;
