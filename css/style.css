@@ -1,7 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -13,7 +14,8 @@ a {
 }
 
 .main-header {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   color: #000000;
@@ -57,7 +59,8 @@ a {
 
 .link-web-red {
   /* Указываем шрифт */
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   /* Указываем цвет */
@@ -86,7 +89,8 @@ a {
 }
 
 .link-apps-green {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -103,7 +107,8 @@ a {
 }
 
 .link-present-yellow {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -165,14 +170,16 @@ a {
 }
 
 .filter legend {
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
 }
 
 .filter ul {
   list-style: none;
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 31px;
   color: #283136;
@@ -185,7 +192,8 @@ a {
 }
 
 .form-button {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #000000;
@@ -227,7 +235,8 @@ a {
 }
 
 .catalog-item-title {
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   text-decoration: none;
@@ -236,7 +245,8 @@ a {
 }
 
 .catalog-item-description {
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   text-align: center;
@@ -245,7 +255,8 @@ a {
 }
 
 .link-buy-red {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -262,18 +273,21 @@ a {
 }
 
 .modal {
-  font-family: "Roboto Regular", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 400;
   background-color: #ffffff;
   text-transform: none;
 }
 
 .modal h2 {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 45px;
 }
 
 .modal.appointment-field {
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 16px;
 }
 
@@ -309,7 +323,8 @@ input[type="message"]:invalid {
 }
 
 .write-us-button {
-  font-family: "Roboto Medium", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -351,7 +366,8 @@ input[type="message"]:invalid {
 }
 
 .footer-slogan {
-  font-family: "Roboto Bold", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
   font-size: 36px;
   line-height: 38px;
 }
@@ -364,6 +380,7 @@ input[type="message"]:invalid {
   min-height: 132px;
   margin: 0 auto;
   padding: 0 20px;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -396,15 +413,6 @@ input[type="message"]:invalid {
   flex-wrap: wrap;
   width: 440px;
   justify-content: space-between;
-  align-items: center;
-}
-
-.shopping-cart {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 160px;
-  justify-content: flex-end;
   align-items: center;
 }
 
@@ -468,4 +476,12 @@ input[type="message"]:invalid {
   width: 580px;
   justify-content: center;
   align-items: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
