@@ -4,30 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>Дизайн-студия: "Нёрдс"</title>
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-      <link href="css/normalize.css" rel="stylesheet">
-      <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
-    <nav class="nav-header">
-      <a class="main-header-logo" href="index.html">
-        <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
-      </a>
-      <ul class="site-navigation">
-        <li><a href="#">СТУДИЯ</a></li>
-        <li><a href="#">КЛИЕНТЫ</a></li>
-        <li class="site-navigation-current">МАГАЗИН</li>
-        <li><a href="#">КОНТАКТЫ</a></li>
-      </ul>
+    <div class="container">
+      <nav class="nav-header">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/index-logo.svg" width="160" height="65" alt="Логотип дизайн-студии Нёрдс">
+        </a>
+        <ul class="site-navigation">
+          <li><a href="#">СТУДИЯ</a></li>
+          <li><a href="#">КЛИЕНТЫ</a></li>
+          <li class="site-navigation-current">МАГАЗИН</li>
+          <li><a href="#">КОНТАКТЫ</a></li>
+        </ul>
+      </nav>
       <a class="shopping-cart" href="#">КОРЗИНА</a>
-    </nav>
+    </div>
   </header>
 
   <main class="container">
     <h1 class="page-title-catalog">Магазин готовых шаблонов</h1>
 
+    <div class="catalog-flex">
     <section class="filter">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
@@ -130,6 +133,7 @@
         </li>
       </ul>
     </section>
+  </div>
     <section class="modal modal-appointment">
       <h2>Напишите нам</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
@@ -150,15 +154,17 @@
       <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
     </section>
   </main>
-  <footer>
-    <ul class="footer-social">
-      <li><a class="social-link" href="#"><img src="img/vk-icon.svg" width="25" height="15" alt="Вконтакте"></a></li>
-      <li><a class="social-link" href="#"><img src="img/fb-icon.svg" width="25" height="15" alt="Фейсбук"></a></li>
-      <li><a class="social-link" href="#"><img src="img/insta-icon.svg" width="25" height="15" alt="Инстаграм"></a></li>
-    </ul>
-    <div class=footer-slogan-discount>
-      <b class="footer-slogan">Давайте дружить, это выгодно!</b>
-      <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+  <footer class="container">
+    <div class="footer-flex">
+      <ul class="footer-social">
+        <li><a class="social-link" href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+        <li><a class="social-link" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+        <li><a class="social-link" href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Инстаграм"></a></li>
+      </ul>
+      <div class=footer-slogan-discount>
+        <b class="footer-slogan">Давайте дружить, это выгодно!</b>
+        <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
     </div>
   </footer>
 </body>
