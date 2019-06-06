@@ -368,7 +368,7 @@ input[type="message"]:invalid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1160px;
   min-height: 132px;
   margin: 0 auto;
   padding: 0 20px;
@@ -494,13 +494,11 @@ input[type="message"]:invalid {
 .filter {
   width: 260px;
   min-height: 800px;
-  outline: 1px solid red;
 }
 
 .catalog {
   width: 760px;
   min-height: 2217px;
-  outline: 1px solid green;
 }
 
 .catalog-item {
@@ -510,10 +508,15 @@ input[type="message"]:invalid {
   margin-bottom: 33px;
 }
 
-.catalog-flex {
+.filter-catalog-flex {
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
   justify-content: space-between;
-  outline: 1px solid blue;
+  margin-top: 60px;
 }
 
 .catalog-list {
