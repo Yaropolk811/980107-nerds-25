@@ -368,7 +368,6 @@ input[type="message"]:invalid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1160px;
   min-height: 132px;
   margin: 0 auto;
   padding: 0 20px;
@@ -377,6 +376,22 @@ input[type="message"]:invalid {
 }
 
 .main-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 132px;
+}
+
+.main-header-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
   min-height: 132px;
 }
 
@@ -408,12 +423,24 @@ input[type="message"]:invalid {
   align-items: center;
 }
 
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 1160px;
+  min-height: 350px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
 .services-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 1100px;
   min-height: 350px;
+  margin: 0 auto;
+  padding-right: 60px;
   align-items: center;
   justify-content: space-between;
 }
@@ -432,8 +459,10 @@ input[type="message"]:invalid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
   min-height: 217px;
-  width: 960px;
   align-items: center;
   justify-content: space-between;
 }
@@ -478,12 +507,16 @@ input[type="message"]:invalid {
   margin: -1px;
 }
 
+.page-title-catalog-flex {
+  background-color: #eeeeee;
+  width: 100%;
+}
+
 .page-title-catalog {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   font-size: 55px;
   line-height: 56px;
-  background-color: #eeeeee;
   min-height: 43px;
   text-align: center;
   padding-top: 111px;
@@ -504,8 +537,10 @@ input[type="message"]:invalid {
 .catalog-item {
   width: 360px;
   /*временная высота для item без всплывающего описания товара.Потом сменю на 616px*/
-  min-height: 807px;
+  min-height: 576px;
   margin-bottom: 33px;
+
+  position: relative;
 }
 
 .filter-catalog-flex {
@@ -532,4 +567,11 @@ input[type="message"]:invalid {
 .catalog-item-info {
   width: 360px;
   min-height: 231px;
+
+  position: absolute;
+  bottom: 10px;
+}
+
+label {
+  cursor: pointer;
 }
