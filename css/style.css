@@ -56,8 +56,6 @@ a {
 .shopping-cart {
   display: block;
   padding: 51px 0px 51px 45px;
-  background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
   position: relative;
 }
 
@@ -69,10 +67,10 @@ a {
   left: 3px;
   width: 15px;
   height: 15px;
-  background-image: url("img/cart-icon.svg");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  background-color: red;
+    opacity: 0.2;
 }
 
 .services-list {
@@ -476,6 +474,21 @@ input[type="message"]:invalid {
   text-align: left;
 }
 
+.services-list h3 {
+  font-size: 24px;
+   line-height: 30px;
+   margin: 0;
+   margin-top: 27px;
+}
+
+.services-list p {
+  font-size: 16px;
+   line-height: 21px;
+   margin: 0;
+   margin-top: 21px;
+   margin-bottom: 35px;
+}
+
 .footer-flex {
   display: flex;
   flex-direction: row;
@@ -520,18 +533,24 @@ input[type="message"]:invalid {
   align-items: center;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
+
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 
 .page-title-catalog-flex {
   background-color: #eeeeee;
