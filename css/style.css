@@ -655,8 +655,6 @@ label {
 
 .appointment-field-text p {
   width: 760px;
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .modal-appointment h2 {
@@ -674,8 +672,6 @@ label {
 }
 
 .appointment-field {
-  background: rgba(255, 45, 82, 0.2);
-  box-shadow: 0 0 0 3px rgb(255, 45, 82);
 }
 
 .modal-close::before {
