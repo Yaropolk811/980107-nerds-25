@@ -56,21 +56,23 @@
     <section class="modal modal-appointment">
       <h2>Напишите нам</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="appointment-field">
-          <label for="name-field">Ваше имя:</label>
-          <input id="name-field" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="appointment-field">
-          <label for="email-field">Ваш e-mail:</label>
-          <input id="email-field" type="text" name="email" value="" placeholder="email@example.com">
-        </p>
-        <p class="appointment-field">
+        <div class="personaldata-field">
+          <p class="appointment-field">
+            <label for="name-field">Ваше имя:</label>
+            <input id="name-field" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p class="appointment-field">
+            <label for="email-field">Ваш e-mail:</label>
+            <input id="email-field" type="text" name="email" value="" placeholder="email@example.com">
+          </p>
+        </div>
+        <p class="appointment-field-text">
           <label for="message-field">Текст письма:</label>
           <input id="message-field" type="text" name="message" value="" placeholder="В свободной форме">
         </p>
         <button class="write-us-button" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
+      <!--<button class="modal-close" type="button" aria-label="Закрыть форму"></button> -->
     </section>
   </main>
   <footer class="container">
