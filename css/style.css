@@ -612,7 +612,8 @@ input[type="radio"].visually-hidden {
   bottom: 10px;
 }
 
-.catalog-item:hover .catalog-item-info {
+.catalog-item:hover .catalog-item-info,
+.catalog-item:focus .catalog-item-info {
   display: block;
   width: 360px;
   min-height: 231px;
