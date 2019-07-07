@@ -452,13 +452,7 @@ input[type="message"]:invalid {
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  min-height: 132px;
   margin: 0 auto;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .main-header {
@@ -649,12 +643,12 @@ input[type="message"]:invalid {
 }
 
 .portfolio img {
-   opacity: 0.2;
+  opacity: 0.2;
 }
 
 .portfolio img:hover,
 .portfolio img:focus {
-   opacity: 1;
+  opacity: 1;
 }
 
 .portfolio img:active {
@@ -663,7 +657,7 @@ input[type="message"]:invalid {
 
 .portfolio {
   width: 100%;
-text-align: center;
+  text-align: center;
 }
 
 .list-portfolio {
@@ -689,7 +683,7 @@ text-align: center;
 .logo-portfolio-2 {
   width: 211px;
   padding: 46px 44px 44px 45px;
- position: relative;
+  position: relative;
 }
 
 .logo-portfolio-2::after {
@@ -705,7 +699,7 @@ text-align: center;
 .logo-portfolio-3 {
   width: 187px;
   padding: 65px 56px 63px 57px;
-position: relative;
+  position: relative;
 }
 
 .logo-portfolio-3::after {
@@ -721,7 +715,7 @@ position: relative;
 .logo-portfolio-4 {
   width: 173px;
   padding: 52px 44px 44px 63px;
-position: relative;
+  position: relative;
 }
 
 .logo-portfolio-4::after {
@@ -876,7 +870,11 @@ label {
   min-height: 440px;
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   padding: 70px 100px 80px 100px;
-  position: relative;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  z-index: 3;
+  display: none;
 }
 
 .appointment-form {
@@ -1045,7 +1043,7 @@ label {
   position: absolute;
   left: 50%;
   bottom: 104px;
-  z-index: 100;
+  z-index: 3;
   width: 160px;
   height: 18px;
   text-align: center;
@@ -1171,4 +1169,89 @@ label {
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
+
+.contacts {
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.contacts-map-info {
+  position: relative;
+}
+
+.contacts-map-info::before {
+  content: "";
+  position: absolute;
+  width: 1440px;
+  height: 416px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.contacts-map {
+  position: relative;
+  border: none;
+  z-index: 1;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 219px;
+  height: 207px;
+  padding: 54px 50px 47px;
+  text-align: left;
+  margin: 0;
+  background-color: #ffffff;
+  position: absolute;
+  top: 54px;
+  left: 372px;
+  z-index: 2;
+}
+
+.contacts-info b {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.contacts-info p {
+  line-height: 18px;
+  margin: 20px 0 0;
+  color: #666666;
+}
+
+.link-appointment {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #FB565A;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: inline-block;
+  width: 219px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 37px;
+}
+
+.link-appointment:hover,
+.link-appointment:focus {
+  background-color: #e74246;
+}
+
+.link-appointment:active {
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d7373b;
+  color: rgba(255, 255, 255, 0.3);
 }

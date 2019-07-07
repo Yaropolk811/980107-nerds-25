@@ -120,11 +120,26 @@
     <section class="portfolio">
       <h2 class="visually-hidden">Портфолио</h2>
       <ul class="list-portfolio">
-        <li class="logo-portfolio-1"> <a class="link-portfolio" href="#"> <img src="img/logo-1.png" width="199" height="68" alt="Сайт HTML academy"></a> </li>
+        <li class="logo-portfolio-1"> <a class="link-portfolio" href="https://htmlacademy.ru/intensive/htmlcss"> <img src="img/logo-1.png" width="199" height="68" alt="Сайт HTML academy"></a> </li>
         <li class="logo-portfolio-2"> <a class="link-portfolio" href="#"> <img src="img/logo-2.png" width="209" height="90" alt="Сайт Барбершоп Бородинский"></a> </li>
         <li class="logo-portfolio-3"> <a class="link-portfolio" href="#"> <img src="img/logo-3.png" width="185" height="52" alt="Сайт PINK"></a> </li>
         <li class="logo-portfolio-4"> <a class="link-portfolio" href="#"> <img src="img/logo-4.png" width="173" height="84" alt="Сайт Мишка"></a> </li>
       </ul>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="contacts-map-info">
+        <iframe class="contacts-map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207512053241!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562506352481!5m2!1sru!2sru"
+          width="1440" height="416" style="border:0" allowfullscreen>
+        </iframe>
+        <div class="contacts-info">
+          <b>NЁRDS DESIGN STUDIO</b>
+          <p class="address">191186, Санкт-Петербург,<br>ул. Б.Конюшенная, д. 19/8</p>
+          <p class="tel-number">тел. +7 (812) 275-75-75</p>
+          <a class="link-appointment" href="#">НАПИШИТЕ НАМ</a>
+        </div>
+      </div>
     </section>
     <section class="modal modal-appointment">
       <h2>Напишите нам</h2>
@@ -160,7 +175,20 @@
         <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </div>
+
+    <script>
+      var link = document.querySelector(".link-appointment");
+
+      link.addEventListener("click", function() {
+        console.log("Кликпо ссылке вход");
+      });
+    </script>
+
   </footer>
-</body>
+
+
+  <body>
+
+  </body>
 
 </html>
