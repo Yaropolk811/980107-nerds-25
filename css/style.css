@@ -56,15 +56,15 @@ a {
 
 .shopping-cart {
   display: block;
-  padding: 51px 0px 51px 45px;
+  padding: 51px 0px 1px 45px;
   position: relative;
 }
 
 .shopping-cart::before {
   content: "";
   position: absolute;
-  top: 58.5px;
-  left: 3px;
+  top: 58px;
+  left: 4px;
   width: 15px;
   height: 15px;
   background-image: url("../img/cart-icon.svg");
@@ -264,6 +264,11 @@ a {
   opacity: 1;
 }
 
+.price-controls input[type="text"]:hover,
+.price-controls input[type="text"]:focus {
+  border: none;
+}
+
 .max-price {
   text-align: right;
 }
@@ -325,10 +330,12 @@ a {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 17px;
   text-align: center;
   color: #666666;
   text-transform: none;
+  padding-right: 93px;
+  padding-left: 93px;
 }
 
 .link-buy-red {
@@ -460,7 +467,6 @@ input[type="message"]:invalid {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  min-height: 132px;
 }
 
 .main-header-flex {
@@ -472,16 +478,17 @@ input[type="message"]:invalid {
   padding: 0 20px;
   align-items: center;
   justify-content: space-between;
-  min-height: 132px;
+
 }
 
 .nav-header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 132px;
+  min-height: 121px;
   width: 800px;
-  align-items: center;
+  align-items: flex-end;
+  padding-bottom: 11px;
   justify-content: space-between;
 }
 
@@ -491,7 +498,7 @@ input[type="message"]:invalid {
   flex-wrap: wrap;
   width: 160px;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .site-navigation {
@@ -539,14 +546,14 @@ input[type="message"]:invalid {
   font-size: 24px;
   line-height: 30px;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 25px;
 }
 
 .services-list p {
   font-size: 16px;
-  line-height: 21px;
+  line-height: 22px;
   margin: 0;
-  margin-top: 21px;
+  margin-top: 23px;
   margin-bottom: 35px;
 }
 
@@ -768,7 +775,7 @@ input[type="message"]:invalid {
   flex-direction: row;
   flex-wrap: wrap;
   width: 580px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -817,9 +824,36 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   width: 360px;
   min-height: 576px;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
+  padding-top: 40px;
+  border-radius: 1%;
   position: relative;
 }
+
+.catalog-item::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/browser.png");
+  width: 360px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 0px;
+  left: 0px;
+  opacity: 0.12;
+}
+
+.catalog-item:hover {
+  background-image: url("../img/browser.png");
+  width: 360px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  top: 0px;
+  left: 0px;
+}
+
+
 
 .filter-catalog-flex {
   display: flex;
@@ -847,7 +881,7 @@ input[type="radio"].visually-hidden {
   width: 360px;
   min-height: 231px;
   position: absolute;
-  bottom: 10px;
+
 }
 
 .catalog-item:hover .catalog-item-info,
@@ -856,7 +890,7 @@ input[type="radio"].visually-hidden {
   width: 360px;
   min-height: 231px;
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
 }
 
 label {
@@ -1081,7 +1115,7 @@ label {
 
 .slider-item {
   display: none;
-  padding: 60px 0 74px 0;
+  padding: 60px 0 80px 0;
 }
 
 .slider-item:nth-child(1) {
@@ -1143,12 +1177,13 @@ label {
   max-width: 430px;
   margin: 0;
   margin-bottom: 38px;
+  line-height: 23px;
 }
 
 .slider-item-button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 17px 0;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
@@ -1158,6 +1193,7 @@ label {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
+
 }
 
 .slider-item-button:hover,
@@ -1175,6 +1211,7 @@ label {
   width: 100%;
   text-align: center;
   margin-top: 80px;
+  min-height: 416px;
 }
 
 .contacts-map-info {
@@ -1184,17 +1221,21 @@ label {
 .contacts-map-info::before {
   content: "";
   position: absolute;
-  width: 1440px;
-  height: 416px;
-  background-image: url("../img/map.png");
+  width: 231px;
+  height: 190px;
+  background-image: url("../img/map-marker.png");
   background-repeat: no-repeat;
   background-position: 0 0;
+  left: 1053px;
+  top: 90px;
 }
 
 .contacts-map {
-  position: relative;
+  position: absolute;
   border: none;
   z-index: 1;
+  left: 232px;
+  display: none;
 }
 
 .contacts-info {
