@@ -103,40 +103,40 @@
       <div class="catalog-flex">
         <section class="catalog">
           <h2 class="visually-hidden">Список готовых шаблонов</h2>
-          <div class="sort-filter">
-            <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
-              <fieldset>
-                <legend>СОРТИРОВАТЬ:</legend>
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <div class="sort-filter">
+              <div class="sorting-filter-type">
+                <h3>СОРТИРОВАТЬ:</h3>
                 <ul>
                   <li>
-                    <input id="price-by" class="visually-hidden price-sorting" type="radio" name="price-sorting" value="по цене" checked>
+                    <input id="price-by" class="visually-hidden type-sorting" type="radio" name="type-sorting" value="по цене" checked>
                     <label for="price-by">ПО ЦЕНЕ</label>
                   </li>
                   <li>
                     <input id="type-by" class="visually-hidden type-sorting" type="radio" name="type-sorting" value="по типу">
-                    <label for="price-by">ПО ТИПУ</label>
+                    <label for="type-by">ПО ТИПУ</label>
                   </li>
                   <li>
-                    <input id="name-by" class="visually-hidden name-sorting" type="radio" name="name-sorting" value="по имени">
-                    <label for="price-by">ПО НАЗВАНИЮ</label>
+                    <input id="name-by" class="visually-hidden type-sorting" type="radio" name="type-sorting" value="по имени">
+                    <label for="name-by">ПО НАЗВАНИЮ</label>
                   </li>
                 </ul>
-              </fieldset>
-              <fieldset>
-                <legend class="visually-hidden">ПОРЯДОК СОРТИРОВКИ</legend>
+              </div>
+              <div class="sorting-filter">
+                <h3 class="visually-hidden">ПОРЯДОК СОРТИРОВКИ</h3>
                 <ul>
                   <li>
-                    <input id="down-dir" class="visually-hidden descending-sorting" type="radio" name="descending-sorting" value="по убыванию" checked>
-                    <label for="down-dir"><img src="img/icon-down-dir.png" width="11" height="10" alt="сортировать по убыванию"></label>
+                    <input id="down-dir" class="visually-hidden descending-sorting" type="radio" name="sorting-filter" value="по убыванию" checked>
+                    <label for="down-dir"></label>
                   </li>
                   <li>
-                    <input id="up-dir" class="visually-hidden ascending-sorting" type="radio" name="ascending-sorting" value="по возрастанию">
-                    <label for="up-dir"><img src="img/icon-up-dir.png" width="11" height="10" alt="сортировать по возрастанию"></label>
+                    <input id="up-dir" class="visually-hidden ascending-sorting" type="radio" name="sorting-filter" value="по возрастанию">
+                    <label for="up-dir"></label>
                   </li>
                 </ul>
-              </fieldset>
-            </form>
-          </div>
+              </div>
+            </div>
+          </form>
           <ul class="catalog-list">
             <li class="catalog-item sedona">
               <img src="img/item-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов SEDONA">

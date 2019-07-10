@@ -358,6 +358,20 @@ a {
   text-align: center;
   color: #000000;
   padding-top: 9px;
+  text-decoration: none;
+}
+
+.catalog-item-title a {
+  color: #000000;
+}
+
+.catalog-item-title:hover a,
+.catalog-item-title:focus a {
+  color: #fb565a;
+}
+
+.catalog-item-title:active a {
+  color: #b2b2b2;
 }
 
 .catalog-item-description {
@@ -554,10 +568,10 @@ input[type="text"]:invalid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  min-height: 121px;
   width: 800px;
   align-items: flex-end;
   padding-bottom: 11px;
+  padding-top: 48px;
   justify-content: space-between;
 }
 
@@ -926,7 +940,6 @@ fieldset {
 
 .catalog {
   width: 760px;
-  min-height: 2217px;
 }
 
 .catalog-item {
@@ -978,6 +991,7 @@ fieldset {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  margin-top: 51px;
   justify-content: space-between;
   list-style: none;
 }
@@ -1010,8 +1024,8 @@ label {
   box-shadow: 0px 20px 40px 0 rgba(0, 1, 1, 0.75);
   padding: 70px 91px 80px 99px;
   position: fixed;
-  top: 25%;
-  left: 24.8%;
+  top: calc(50% - 590px / 2);
+  left: calc(50% - 960px / 2);
   z-index: 3;
   display: none;
 }
@@ -1215,31 +1229,173 @@ label {
   opacity: 0.1;
 }
 
-.fieldset {
-  margin: 0;
-  padding: 0;
-}
-
-.sort-filter fieldset {
-  border: none;
-}
-
-.sort-filter legend {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
-  width: 140px;
-}
-
 .sort-filter ul {
   list-style: none;
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 31px;
-  color: #283136;
+  font-size: 14px;
+  line-height: 12px;
+  color: #b2b2b2;
   text-transform: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sort-filter h3 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0;
+  margin: 0;
+  margin-top: -3px;
+}
+
+.sort-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 760px;
+}
+
+.sorting-filter-type {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 700px;
+}
+
+.sorting-filter-type ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 8px 25px 0px 0px;
+  width: 275px;
+  vertical-align: top;
+}
+
+.price-by,
+.type-by {
+  width: 60px;
+}
+
+.name-by {
+  width: 100px;
+}
+
+.sorting-filter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+.sorting-filter ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+}
+
+.sorting-filter li {
+  width: 29px;
+  text-align: right;
+  vertical-align: top;
+  margin-top: 8px;
+}
+
+.type-sorting:checked+label {
+  color: #000000;
+}
+
+.type-sorting+label {
+  color: #b2b2b2;
+}
+
+.descending-sorting+label {
+  position: relative;
+}
+
+.descending-sorting+label::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: -2px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.2;
+}
+
+.descending-sorting:checked+label::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: -2px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+
+.ascending-sorting+label {
+  position: relative;
+}
+
+.ascending-sorting+label::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: -2px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.2;
+}
+
+.ascending-sorting:checked+label::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: -2px;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 1;
+}
+
+.price-sorting {
+  width: 70px;
+}
+
+.type-sorting {
+  width: 70px;
+}
+
+.name-sorting {
+  width: 110px;
 }
 
 .slider-container {
@@ -1416,8 +1572,8 @@ label {
   position: absolute;
   border: none;
   z-index: 1;
-  left: 232px;
-  display: none;
+  top: 0px;
+  left: calc(50% - 1440px / 2);
 }
 
 .contacts-info {
