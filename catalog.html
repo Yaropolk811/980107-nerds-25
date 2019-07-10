@@ -33,7 +33,6 @@
     <div class="page-title-catalog-flex">
       <h1 class="page-title-catalog">Магазин готовых шаблонов</h1>
     </div>
-
     <div class="filter-catalog-flex ">
       <div class="filter-flex">
         <section class="filter">
@@ -55,7 +54,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-grid">
               <legend>СЕТКА:</legend>
               <ul>
                 <li class="filter-option">
@@ -72,7 +71,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset>
+            <fieldset class="filter-features">
               <legend>ОСОБЕННОСТИ:</legend>
               <ul>
                 <li class="filter-option">
@@ -104,8 +103,42 @@
       <div class="catalog-flex">
         <section class="catalog">
           <h2 class="visually-hidden">Список готовых шаблонов</h2>
+          <div class="sort-filter">
+          <form class="filter-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset>
+              <legend>СОРТИРОВАТЬ:</legend>
+              <ul>
+                <li>
+                  <input id="price-by" class="visually-hidden price-sorting" type="radio" name="price-sorting" value="по цене" checked>
+                  <label for="price-by">ПО ЦЕНЕ</label>
+                </li>
+                <li>
+                  <input id="type-by" class="visually-hidden type-sorting" type="radio" name="type-sorting" value="по типу">
+                  <label for="price-by">ПО ТИПУ</label>
+                </li>
+                <li>
+                  <input id="name-by" class="visually-hidden name-sorting" type="radio" name="name-sorting" value="по имени">
+                  <label for="price-by">ПО НАЗВАНИЮ</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend class="visually-hidden">ПОРЯДОК СОРТИРОВКИ</legend>
+              <ul>
+                <li>
+                  <input id="down-dir" class="visually-hidden descending-sorting" type="radio" name="descending-sorting" value="по убыванию" checked>
+                  <label for="down-dir"><img src="img/icon-down-dir.png" width="11" height="10" alt="сортировать по убыванию"></label>
+                </li>
+                <li>
+                  <input id="up-dir" class="visually-hidden ascending-sorting" type="radio" name="ascending-sorting" value="по возрастанию">
+                  <label for="up-dir"><img src="img/icon-up-dir.png" width="11" height="10" alt="сортировать по возрастанию"></label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
           <ul class="catalog-list">
-            <li class="catalog-item">
+            <li class="catalog-item sedona">
               <img src="img/item-sedona.jpg" width="360" height="576" alt="Информационный сайт для туристов SEDONA">
               <div class="catalog-item-info">
                 <h3 class="catalog-item-title"><a href="#">SEDONA</a></h3>
@@ -113,7 +146,7 @@
                 <a class="link link-buy-red">9900 РУБ.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item pinkapp">
               <img src="img/item-pinkapp.jpg" width="360" height="576" alt="Продуктовый лендинг приложения для iOS и Android PINK APP">
               <div class=catalog-item-info>
                 <h3 class="catalog-item-title"><a href="#">PINK APP</a></h3>
@@ -121,7 +154,7 @@
                 <a class="link link-buy-red">9900 РУБ.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item barbershop">
               <img src="img/item-barbershop.jpg" width="360" height="576" alt="Сайт салона красоты для мужчин BARBERSHOP">
               <div class=catalog-item-info>
                 <h3 class="catalog-item-title"><a href="#">BARBERSHOP</a></h3>
@@ -129,7 +162,7 @@
                 <a class="link link-buy-red">9900 РУБ.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item mishka">
               <img src="img/item-mishka.jpg" width="360" height="576" alt="Интернет-магазин вязаных игрушек MISHKA">
               <div class=catalog-item-info>
                 <h3 class="catalog-item-title"><a href="#">MISHKA</a></h3>
@@ -137,7 +170,7 @@
                 <a class="link link-buy-red">9900 РУБ.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item aplus">
               <img src="img/item-aplus.jpg" width="360" height="576" alt="Лендинг курсов повышения квалификации 'A PLUS'">
               <div class=catalog-item-info>
                 <h3 class="catalog-item-title"><a href="#">A PLUS</a></h3>
@@ -145,7 +178,7 @@
                 <a class="link link-buy-red">9900 РУБ.</a>
               </div>
             </li>
-            <li class="catalog-item">
+            <li class="catalog-item kvast">
               <img src="img/item-kvast.jpg" width="360" height="576" alt="Промо-сайт производителя крафтового кваса КВАСТ">
               <div class=catalog-item-info>
                 <h3 class="catalog-item-title"><a href="#">КВАСТ</a></h3>
@@ -154,9 +187,32 @@
               </div>
             </li>
           </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item-current"><a>1</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item pagination-item-next"><a href="#">СЛЕДУЮЩАЯ</a></li>
+          </ul>
         </section>
       </div>
     </div>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <div class="contacts-map-info">
+        <img src="img/map.png" width="1440" height="416" alt="Карта"></a>
+        <iframe class="contacts-map"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207512053241!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562506352481!5m2!1sru!2sru"
+          width="1440" height="416" style="border:0" allowfullscreen>
+        </iframe>
+        <div class="contacts-info">
+          <b>NЁRDS DESIGN STUDIO</b>
+          <p class="address">191186, Санкт-Петербург,<br>ул. Б.Конюшенная, д. 19/8</p>
+          <p class="tel-number">тел. +7 (812) 275-75-75</p>
+          <a class="link-appointment" href="#">НАПИШИТЕ НАМ</a>
+        </div>
+      </div>
+    </section>
+
     <section class="modal modal-appointment">
       <h2>Напишите нам</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
@@ -172,11 +228,11 @@
         </div>
         <p class="appointment-field-text">
           <label for="message-field">Текст письма:</label>
-          <input id="message-field" type="text" name="message" value="" placeholder="В свободной форме">
+          <textarea  id="message-field" rows="5" cols="92" name="message" placeholder="В свободной форме"></textarea>
         </p>
         <button class="write-us-button" type="submit">Отправить</button>
       </form>
-      <!--<button class="modal-close" type="button" aria-label="Закрыть форму"></button> -->
+      <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
     </section>
   </main>
   <footer class="container">
@@ -190,9 +246,84 @@
         <b class="footer-slogan">Давайте дружить, это выгодно!</b>
         <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-
     </div>
   </footer>
-</body>
+
+  <script>
+    var link = document.querySelector(".link-appointment");
+
+    var popup = document.querySelector(".modal-appointment");
+    var close = popup.querySelector(".modal-close");
+
+    var form = popup.querySelector(".appointment-form");
+    var login = popup.querySelector("[name=name]");
+    var email = popup.querySelector("[name=email]");
+    var message = popup.querySelector("[name=message]");
+
+    var isStorageSupport = true;
+    var storage = "";
+
+    try {
+      storage = localStorage.getItem("login");
+    } catch (err) {
+      isStorageSupport = false;
+    }
+
+
+
+    link.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+
+      if (storage) {
+        login.value = storage;
+        email.focus();
+      } else {
+        login.focus();
+      }
+    });
+
+    close.addEventListener("click", function(evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+      popup.classList.remove("modal-error");
+    });
+
+    form.addEventListener("submit", function(evt) {
+      if (!login.value || !email.value) {
+        evt.preventDefault();
+        popup.classList.add("modal-error");
+        console.log("Нужно ввести имя и e-mail");
+      } else {
+        if (isStorageSupport) {
+          localStorage.setItem("login", login.value);
+        }
+      }
+    });
+
+    form.addEventListener("submit", function(evt) {
+      if (!message.value) {
+        evt.preventDefault();
+        popup.classList.remove("modal-error");
+        popup.offsetWidth = popup.offsetWidth;
+        popup.classList.add("modal-error");
+        console.log("Нужно ввести текст сообщения");
+      }
+    });
+
+    window.addEventListener("keydown", function(evt) {
+      if (evt.keyCode === 27) {
+        evt.preventDefault();
+        if (popup.classList.contains("modal-show")) {
+          popup.classList.remove("modal-show");
+          popup.classList.remove("modal-error");
+        }
+      }
+    });
+  </script>
+
+  <body>
+
+  </body>
 
 </html>

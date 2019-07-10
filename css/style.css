@@ -212,7 +212,7 @@ a {
 .range-controls {
   position: relative;
   height: 41px;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
@@ -266,11 +266,12 @@ a {
 
 .price-controls input[type="text"] {
   width: 60px;
-  padding: 8px 10px;
-  margin-left: 10px;
+  padding: 0px 10px;
+  margin-left: 8px;
   font-family: Roboto, Arial, sans-serif;
   font-size: 16px;
   text-align: center;
+  height: 40px;
   color: #283136;
   border: none;
   border-radius: 5px;
@@ -313,9 +314,27 @@ a {
 }
 
 .form-button:active {
-  color: rgba(0, 0, 0, 0.3);
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d5d5d5;
+}
+
+.filter-grid {
+  margin-top: 51px;
+}
+
+.filter-grid ul {
+  margin-top: 11px;
+  padding-left: 0;
+}
+
+.filter-features {
+  margin-top: 20px;
+}
+
+.filter-features ul {
+  margin-top: 11px;
+  margin-bottom: 42px;
+  padding-left: 0;
 }
 
 .catalog-list {
@@ -338,18 +357,50 @@ a {
   text-decoration: none;
   text-align: center;
   color: #000000;
+  padding-top: 9px;
 }
 
 .catalog-item-description {
   font-family: "Roboto", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 18px;
   text-align: center;
   color: #666666;
   text-transform: none;
-  padding-right: 93px;
-  padding-left: 93px;
+  margin-top: -3px;
+  padding-top: 0px;
+  padding-bottom: 14px;
+}
+
+.sedona .catalog-item-description {
+  padding-right: 80px;
+  padding-left: 80px;
+}
+
+.pinkapp .catalog-item-description {
+  padding-right: 60px;
+  padding-left: 60px;
+}
+
+.barbershop .catalog-item-description {
+  padding-right: 95px;
+  padding-left: 95px;
+}
+
+.mishka .catalog-item-description {
+  padding-right: 110px;
+  padding-left: 110px;
+}
+
+.aplus .catalog-item-description {
+  padding-right: 73px;
+  padding-left: 73px;
+}
+
+.kvast .catalog-item-description {
+  padding-right: 75px;
+  padding-left: 75px;
 }
 
 .link-buy-red {
@@ -361,13 +412,22 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   background-color: #FB565A;
-  padding-top: 16px;
-  padding-bottom: 16px;
   display: inline-block;
-  width: 200px;
+  width: 195px;
   text-align: center;
   border-radius: 5px;
   cursor: pointer;
+  padding: 16px 0px 16px 5px;
+}
+
+.link-buy-red:hover,
+.link-buy-red:focus {
+  background-color: #e74246;
+}
+
+.link-buy-red:active {
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .modal {
@@ -453,7 +513,7 @@ input[type="text"]:invalid {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-.social-link img:active {
+.social-link:active>img {
   opacity: 0.3;
 }
 
@@ -852,14 +912,16 @@ input[type="radio"].visually-hidden {
   line-height: 56px;
   min-height: 43px;
   text-align: center;
-  padding-top: 111px;
-  padding-bottom: 111px;
+  padding: 59px 5px 108px 0px;
   margin: 0 auto;
 }
 
 .filter {
   width: 260px;
-  min-height: 800px;
+}
+
+fieldset {
+  padding: 0;
 }
 
 .catalog {
@@ -905,9 +967,9 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px 20px 0px 14px;
   justify-content: space-between;
-  margin-top: 60px;
+  margin-top: 55px;
 }
 
 .catalog-list {
@@ -926,6 +988,8 @@ input[type="radio"].visually-hidden {
   min-height: 231px;
   position: absolute;
 }
+
+.sedona {}
 
 .catalog-item:hover .catalog-item-info,
 .catalog-item:focus .catalog-item-info {
@@ -1070,11 +1134,6 @@ label {
   opacity: 0.1;
 }
 
-.filter-form ul {
-  padding: 0;
-  margin: 0;
-}
-
 .filter-option {
   margin-bottom: 10px;
   padding-left: 35px;
@@ -1094,11 +1153,12 @@ label {
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;
+background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
 
-.filter-input-radio:checked+label::after {
+.filter-input-radio:checked+label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1108,6 +1168,7 @@ label {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+    opacity: 0.4;
 }
 
 .filter-input-checkbox+label::before {
@@ -1120,9 +1181,10 @@ label {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
 }
 
-.filter-input-checkbox:checked+label::after {
+.filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
   left: -35px;
@@ -1132,6 +1194,38 @@ label {
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+  opacity: 0.4;
+}
+
+.filter-input-radio+label:focus::before {
+ opacity: 1;
+}
+
+.fieldset {
+margin: 0;
+padding: 0;
+}
+
+.sort-filter fieldset {
+border: none;
+}
+
+.sort-filter legend {
+font-family: "Roboto", "Arial", sans-serif;
+font-weight: 700;
+font-size: 18px;
+line-height: 30px;
+width: 140px;
+}
+
+.sort-filter ul {
+list-style: none;
+font-family: "Roboto", "Arial", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 31px;
+color: #283136;
+text-transform: none;
 }
 
 .slider-container {
@@ -1375,6 +1469,59 @@ label {
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 28px 0px -20px 0px;
+  list-style: none;
+}
+
+.pagination-item {
+  margin-right: 12px;
+  font-weight: 500;
+}
+
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-item a {
+  display: block;
+  padding: 10px 20.5px;
+  border-radius: 3%;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item-next a {
+  display: block;
+  padding: 10px 77.9px;
+  border-radius: 3%;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item-current a {
+  display: block;
+  margin-right: 12px;
+  font-weight: 500;
+  border-radius: 3%;
+  background-color: #ffffff;
+  border: 3px solid #eeeeee;
+  padding: 7px 17.5px;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
 .modal-show {
