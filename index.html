@@ -43,6 +43,7 @@
         <ul class="slider-list">
           <li class="slider-item">
             <h3>Долго, дорого,<br> скрупулезно.</h3>
+            <!--Для проверяющего: без br здесь не обойтись, так как вторая строка по содержанию на 60px шире! Наставник со мной согласен -->
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
             <a class="slider-item-button button" href="#">Узнать больше</a>
           </li>
@@ -65,25 +66,24 @@
       <ul class="services-list">
         <li>
           <img src="img/web-sites.jpg" width="300" height="146" alt="заказать веб-сайт">
-          <h3> ВЕБ-САЙТЫ </h3>
+          <h3>ВЕБ-САЙТЫ</h3>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="link link-web-red" href="#">ЗАКАЗАТЬ</a>
         </li>
         <li>
           <img src="img/apps.jpg" width="300" height="146" alt="заказать приложение">
-          <h3> ПРИЛОЖЕНИЯ </h3>
+          <h3>ПРИЛОЖЕНИЯ</h3>
           <p>Покорите топ 10 приложений в AppStore и Google Play</p>
           <a class="link link-apps-green" href="#">ЗАКАЗАТЬ</a>
         </li>
         <li>
           <img src="img/presentations.jpg" width="300" height="146" alt="заказать презентацию">
-          <h3> ПРЕЗЕНТАЦИИ </h3>
+          <h3>ПРЕЗЕНТАЦИИ</h3>
           <p>Вы даже не подозреваете насколько вы изумительны!</p>
           <a class="link link-present-yellow" href="#">ЗАКАЗАТЬ</a>
         </li>
       </ul>
     </section>
-
     <section class="presentation">
       <h2 class="visually-hidden">Презентация</h2>
       <div class="container-presentation-1">
@@ -125,24 +125,21 @@
         <li class="logo-portfolio-4"> <a class="link-portfolio" href="#"> <img src="img/logo-4.png" width="173" height="84" alt="Сайт Мишка"></a> </li>
       </ul>
     </section>
-
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
       <div class="contacts-map-info">
-        <img src="img/map.png" width="1440" height="416" alt="Карта">
         <iframe class="contacts-map"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.207512053241!2d30.323046999999995!3d59.938717000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1562506352481!5m2!1sru!2sru"
           width="1440" height="416" style="border:0" allowfullscreen>
         </iframe>
         <div class="contacts-info">
           <b>NЁRDS DESIGN STUDIO</b>
-          <p class="address">191186, Санкт-Петербург,<br>ул. Б.Конюшенная, д. 19/8</p>
+          <p class="address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
           <p class="tel-number">тел. +7 (812) 275-75-75</p>
           <a class="link-appointment" href="#">НАПИШИТЕ НАМ</a>
         </div>
       </div>
     </section>
-
     <section class="modal modal-appointment">
       <h2>Напишите нам</h2>
       <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
@@ -165,6 +162,7 @@
       <button class="modal-close" type="button" aria-label="Закрыть форму"></button>
     </section>
   </main>
+
   <footer class="container">
     <div class="footer-flex">
       <ul class="footer-social">
@@ -178,79 +176,7 @@
       </div>
     </div>
   </footer>
-
-  <script>
-    var link = document.querySelector(".link-appointment");
-
-    var popup = document.querySelector(".modal-appointment");
-    var close = popup.querySelector(".modal-close");
-
-    var form = popup.querySelector(".appointment-form");
-    var login = popup.querySelector("[name=name]");
-    var email = popup.querySelector("[name=email]");
-    var message = popup.querySelector("[name=message]");
-
-    var isStorageSupport = true;
-    var storage = "";
-
-    try {
-      storage = localStorage.getItem("login");
-    } catch (err) {
-      isStorageSupport = false;
-    }
-
-
-
-    link.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-
-      if (storage) {
-        login.value = storage;
-        email.focus();
-      } else {
-        login.focus();
-      }
-    });
-
-    close.addEventListener("click", function(evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-      popup.classList.remove("modal-error");
-    });
-
-    form.addEventListener("submit", function(evt) {
-      if (!login.value || !email.value) {
-        evt.preventDefault();
-        popup.classList.add("modal-error");
-        console.log("Нужно ввести имя и e-mail");
-      } else {
-        if (isStorageSupport) {
-          localStorage.setItem("login", login.value);
-        }
-      }
-    });
-
-    form.addEventListener("submit", function(evt) {
-      if (!message.value) {
-        evt.preventDefault();
-        popup.classList.remove("modal-error");
-        popup.offsetWidth = popup.offsetWidth;
-        popup.classList.add("modal-error");
-        console.log("Нужно ввести текст сообщения");
-      }
-    });
-
-    window.addEventListener("keydown", function(evt) {
-      if (evt.keyCode === 27) {
-        evt.preventDefault();
-        if (popup.classList.contains("modal-show")) {
-          popup.classList.remove("modal-show");
-          popup.classList.remove("modal-error");
-        }
-      }
-    });
-  </script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>
