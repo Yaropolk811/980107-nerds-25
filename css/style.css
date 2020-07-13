@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -14,7 +14,7 @@ a {
 }
 
 .main-header {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -56,7 +56,7 @@ a {
 
 .shopping-cart {
   display: block;
-  padding: 51px 0px 1px 45px;
+  padding: 51px 0px 6px 45px;
   position: relative;
 }
 
@@ -92,7 +92,7 @@ a {
 }
 
 .link-web-red {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -105,12 +105,13 @@ a {
   display: inline-block;
   width: 160px;
   text-align: center;
+  vertical-align: middle;
   border-radius: 4%;
   cursor: pointer;
 }
 
 .link-apps-green {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -123,12 +124,13 @@ a {
   display: inline-block;
   width: 160px;
   text-align: center;
+  vertical-align: middle;
   border-radius: 4%;
   cursor: pointer;
 }
 
 .link-present-yellow {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -141,6 +143,7 @@ a {
   display: inline-block;
   width: 160px;
   text-align: center;
+  vertical-align: middle;
   border-radius: 4%;
   cursor: pointer;
 }
@@ -183,7 +186,7 @@ a {
 }
 
 .filter legend {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -191,7 +194,7 @@ a {
 
 .filter ul {
   list-style: none;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 16px;
   line-height: 31px;
@@ -262,13 +265,14 @@ a {
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .price-controls input[type="text"] {
   width: 60px;
   padding: 0px 10px;
   margin-left: 8px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: Roboto, Arial, "sans-serif";
   font-size: 16px;
   text-align: center;
   height: 40px;
@@ -289,7 +293,7 @@ a {
 }
 
 .form-button {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -350,7 +354,7 @@ a {
 }
 
 .catalog-item-title {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -375,7 +379,7 @@ a {
 }
 
 .catalog-item-description {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -418,7 +422,7 @@ a {
 }
 
 .link-buy-red {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -429,6 +433,7 @@ a {
   display: inline-block;
   width: 195px;
   text-align: center;
+  vertical-align: middle;
   border-radius: 5px;
   cursor: pointer;
   padding: 16px 0px 16px 5px;
@@ -445,20 +450,20 @@ a {
 }
 
 .modal {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 400;
   background-color: #ffffff;
   text-transform: none;
 }
 
 .modal h2 {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 45px;
 }
 
 .modal.appointment-field {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 700;
   font-size: 16px;
 }
@@ -488,7 +493,7 @@ input[type="text"]:invalid {
 }
 
 .write-us-button {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -536,7 +541,7 @@ input[type="text"]:invalid {
 }
 
 .footer-slogan {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 700;
   font-size: 36px;
   line-height: 38px;
@@ -598,6 +603,7 @@ input[type="text"]:invalid {
   flex-direction: row;
   flex-wrap: wrap;
   width: 440px;
+  margin: 0px 0px 18px 0px;
   justify-content: space-between;
   align-items: center;
 }
@@ -609,7 +615,7 @@ input[type="text"]:invalid {
   width: 1160px;
   min-height: 350px;
   margin: 0 auto;
-  padding: 80px 20px 78px;
+  padding: 78px 20px 78px;
 }
 
 .services-list {
@@ -620,7 +626,6 @@ input[type="text"]:invalid {
   min-height: 350px;
   margin: 0 auto;
   padding-right: 60px;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -629,7 +634,6 @@ input[type="text"]:invalid {
   flex-direction: row;
   flex-wrap: wrap;
   width: 300px;
-  align-items: center;
   justify-content: flex-start;
   text-align: left;
   margin-bottom: 3px;
@@ -639,16 +643,16 @@ input[type="text"]:invalid {
   font-size: 24px;
   line-height: 30px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 24px;
 }
 
 .services-list p {
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 13px;
   margin-bottom: 32px;
-  width: 245px;
+  width: 250px;
 }
 
 .container-presentation-1-head {
@@ -712,8 +716,6 @@ input[type="text"]:invalid {
   line-height: 18px;
   padding-top: 6px;
 }
-
-.container-presentation-1 {}
 
 .container-presentation-1 {
   width: 650px;
@@ -779,6 +781,7 @@ input[type="text"]:invalid {
 .portfolio {
   width: 100%;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 .list-portfolio {
@@ -798,12 +801,12 @@ input[type="text"]:invalid {
 
 .logo-portfolio-1 {
   width: 199px;
-  padding: 62px 49px 42px 32px;
+  padding: 62px 49px 40px 32px;
 }
 
 .logo-portfolio-2 {
   width: 211px;
-  padding: 46px 44px 36px 45px;
+  padding: 46px 44px 34px 45px;
   position: relative;
 }
 
@@ -819,7 +822,7 @@ input[type="text"]:invalid {
 
 .logo-portfolio-3 {
   width: 187px;
-  padding: 65px 56px 55px 57px;
+  padding: 65px 56px 53px 57px;
   position: relative;
 }
 
@@ -835,7 +838,7 @@ input[type="text"]:invalid {
 
 .logo-portfolio-4 {
   width: 173px;
-  padding: 52px 44px 36px 63px;
+  padding: 52px 44px 34px 63px;
   position: relative;
 }
 
@@ -855,7 +858,7 @@ input[type="text"]:invalid {
   flex-wrap: wrap;
   width: 1160px;
   margin: 0 auto;
-  padding: 43px 20px 63px;
+  padding: 55px 20px 63px;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -920,13 +923,13 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title-catalog {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 55px;
   line-height: 56px;
   min-height: 43px;
   text-align: center;
-  padding: 59px 5px 108px 0px;
+  padding: 57px 5px 108px 0px;
   margin: 0 auto;
 }
 
@@ -934,7 +937,9 @@ input[type="radio"].visually-hidden {
   width: 260px;
 }
 
-fieldset {
+.filter-item,
+.filter-grid,
+.filter-features {
   padding: 0;
 }
 
@@ -1003,8 +1008,6 @@ fieldset {
   position: absolute;
 }
 
-.sedona {}
-
 .catalog-item:hover .catalog-item-info,
 .catalog-item:focus .catalog-item-info {
   display: block;
@@ -1014,7 +1017,7 @@ fieldset {
   bottom: 0px;
 }
 
-label {
+.container label {
   cursor: pointer;
 }
 
@@ -1222,16 +1225,9 @@ label {
   opacity: 1;
 }
 
-.filter-input-radio+label:active:before,
-.filter-input-radio:checked+label:active:before,
-.filter-input-checkbox+label:active:before,
-.filter-input-checkbox:checked+label:active:before {
-  opacity: 0.1;
-}
-
 .sort-filter ul {
   list-style: none;
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 12px;
@@ -1242,7 +1238,7 @@ label {
 }
 
 .sort-filter h3 {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -1431,6 +1427,7 @@ label {
   height: 18px;
   padding: 8px;
   border-radius: 50%;
+  vertical-align: middle;
   cursor: pointer;
 }
 
@@ -1460,7 +1457,7 @@ label {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 93% 0;
 }
 
 .slider-item:nth-child(2) {
@@ -1472,7 +1469,7 @@ label {
 .slider-item:nth-child(3) {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 100% 20px;
+  background-position: 100% 0;
 }
 
 #product-1:checked~.slider-list .slider-item:nth-child(1) {
@@ -1505,8 +1502,7 @@ label {
 
 .slider-item h3 {
   max-width: 600px;
-  margin: 0;
-  margin-bottom: 27px;
+  margin: -2px 0px 26px 0px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -1525,6 +1521,7 @@ label {
   padding: 17px 0;
   font-size: 16px;
   line-height: 18px;
+  margin: 41px 0px 0px 0px;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -1548,12 +1545,26 @@ label {
 .contacts {
   width: 100%;
   text-align: center;
-  margin-top: 80px;
+  margin: 0px;
   min-height: 416px;
 }
 
 .contacts-map-info {
   position: relative;
+}
+
+.contacts-map-info::after {
+  content: "";
+  position: absolute;
+  width: 1440px;
+  height: 416px;
+  background-image: url("../img/map.png");
+  background-color: #e1e1e1;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
+  top: 0px;
+  left: calc(50% - 1440px / 2);
 }
 
 .contacts-map-info::before {
@@ -1574,6 +1585,7 @@ label {
   z-index: 1;
   top: 0px;
   left: calc(50% - 1440px / 2);
+  display: none;
 }
 
 .contacts-info {
@@ -1583,7 +1595,7 @@ label {
   align-content: space-between;
   width: 219px;
   height: 207px;
-  padding: 54px 50px 47px;
+  padding: 56px 50px 47px;
   text-align: left;
   margin: 0;
   background-color: #ffffff;
@@ -1612,7 +1624,7 @@ label {
 }
 
 .link-appointment {
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: "Roboto", "Arial", "sans-serif";
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1625,6 +1637,7 @@ label {
   display: inline-block;
   width: 219px;
   text-align: center;
+  vertical-align: middle;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 37px;
@@ -1645,7 +1658,7 @@ label {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
-  margin: 28px 0px -20px 0px;
+  margin: 28px 0px 58px 0px;
   list-style: none;
 }
 
